@@ -42,7 +42,22 @@ Once the application is running, you can access the Swagger UI to explore the AP
 
 ## PostMan Screenshots
  
-   
+   ![image](https://github.com/PraveenB2288/TI-TodoList-App/assets/140286560/e708e5e5-2689-416b-8026-f25fcd0dda88)
+   ![image](https://github.com/PraveenB2288/TI-TodoList-App/assets/140286560/94fee60e-d1a9-4abd-9f2a-d3e6e6564f6d)
+   ![image](https://github.com/PraveenB2288/TI-TodoList-App/assets/140286560/1c0d8ccc-dede-4fe1-8bb8-620895e59e20)
+   ![image](https://github.com/PraveenB2288/TI-TodoList-App/assets/140286560/87e552a8-a383-495e-9b39-8eb0be854a9c)
+   ![image](https://github.com/PraveenB2288/TI-TodoList-App/assets/140286560/a5d30b0a-ed54-4e9e-8bbe-2525410991cf)
+   ![image](https://github.com/PraveenB2288/TI-TodoList-App/assets/140286560/094e5845-b105-4381-8f12-9d636bb78237)
+   ![image](https://github.com/PraveenB2288/TI-TodoList-App/assets/140286560/3bb9ea6e-60b2-482d-aef9-a66b2a8ec49c)
+   ![image](https://github.com/PraveenB2288/TI-TodoList-App/assets/140286560/00c93b03-4b33-46c8-99bc-acea82f544d1)
+
+
+
+
+
+
+
+
  
    
 
