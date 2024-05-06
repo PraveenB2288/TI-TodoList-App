@@ -33,3 +33,16 @@ To run the application using Docker:
 5. Once the image is built, you can run the container:
      docker run -p 8080:8080 ti-todolist-app
 6. The application will start inside the Docker container and will be accessible at `http://localhost:8080`.
+
+## API Documentation
+
+Once the application is running, you can access the Swagger UI to explore the API documentation:
+
+- [Swagger UI](http://localhost:8080/swagger-ui.html)
+
+## PostMan Screenshots
+ 
+   
+ 
+   
+
