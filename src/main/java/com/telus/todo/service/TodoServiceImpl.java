@@ -3,6 +3,7 @@ package com.telus.todo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.telus.todo.exception.ResourceNotFoundException;
 import com.telus.todo.model.Todo;
 import com.telus.todo.repository.TodoRepository;
 
@@ -23,7 +24,8 @@ public class TodoServiceImpl implements TodoService {
     @Override
     public Todo getTodoById(Long id) {
     	Optional<Todo> optionalTodo = todoRepository.findById(id);
-        return optionalTodo.orElse(null);
+        //return optionalTodo.orElse(null);
+        return optionalTodo.orElseThrow(() -> new ResourceNotFoundException("Todo Item", "id", id));
     }
 
     @Override
@@ -35,7 +37,7 @@ public class TodoServiceImpl implements TodoService {
     @Override
     public Todo updateTodo(Long id, Todo todo) {
         Optional<Todo> optionalTodo = todoRepository.findById(id);
-        Todo existingTodo = optionalTodo.orElse(null);
+        Todo existingTodo = optionalTodo.orElseThrow(() -> new ResourceNotFoundException("Todo Item", "id", id));
         if (existingTodo != null) {
             // Update existingTodo properties with the new todo object
             existingTodo.setDescription(todo.getDescription());
@@ -47,11 +49,15 @@ public class TodoServiceImpl implements TodoService {
 
     @Override
     public boolean deleteTodo(Long id) {
-    	try {
-            todoRepository.deleteById(id);
-            return true; 
-        } catch (Exception e) {
-            return false; 
-        }
+		/*
+		 * try { todoRepository.deleteById(id); return true; } catch (Exception e) {
+		 * return false; }
+		 */
+    	
+    	Todo todo = todoRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Todo Item", "id", id));
+
+        todoRepository.delete(todo);
+        return true;
     }
 }
