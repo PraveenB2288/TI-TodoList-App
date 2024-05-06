@@ -18,7 +18,8 @@ To run the application locally:
 2. Clone this repository.
 3. Navigate to the project directory in your terminal.
 4. Run the following command to build and run the application:
-5. The application will start at `http://localhost:8080`.
+         mvn spring-boot:run
+6. The application will start at `http://localhost:8080`.
 
 ### Using Docker
 
